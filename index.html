@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISCOVER BY YOUR FAVOURITE FRUIT</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>DISCOVER BY YOUR FAVOURITE FRUIT</h1>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <button class="mainContainer">
+              <div class="one">
+                <h3 class="description">Strawberry</h3>
+                <img
+                  src="https://www.mapro.com/cdn/shop/files/Group_205772.png?v=1660821256&width=100"
+                  alt="Strawberry"
+                />
+              </div>
+            </button>
+          </li>
+          <li class="splide__slide">
+            <button class="mainContainer">
+              <div class="two">
+                <h3 class="description">Mango</h3>
+                <img
+                  src="https://www.mapro.com/cdn/shop/files/Group_205771.png?v=1660821256&width=100"
+                  alt="Mango"
+                />
+              </div>
+            </button>
+          </li>
+          <li class="splide__slide">
+            <button class="mainContainer">
+              <div class="three">
+                <h3 class="description">Orange</h3>
+                <img
+                  src="https://www.mapro.com/cdn/shop/files/fruit_illustration6_Orange_5dd5b5fb-88f9-4a51-9700-49f33bf370de.png?v=1665751045&width=250"
+                  alt="Orange"
+                />
+              </div>
+            </button>
+          </li>
+          <li class="splide__slide">
+            <button class="mainContainer">
+              <div class="four">
+                <h3 class="description">Pineapple</h3>
+                <img
+                  src="https://www.mapro.com/cdn/shop/files/pink_bg_28dbf26d-6d75-4d3c-a7f4-d0c8368b4d3f.png?v=1660821256&width=100"
+                  alt="Pineapple"
+                />
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script>
+      var splide = new Splide(".splide", {
+        drag: "free",
+        snap: true,
+        perPage: 3,
+        arrows: false,
+        padding: { left: 1, right: "6rem" },
+        pagination: false,
+        breakpoints: {
+          768: {
+            perPage: 1,
+          },
+        },
+      });
+      splide.mount();
+    </script>
+  </body>
+</html>

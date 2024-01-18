@@ -1,0 +1,85 @@
+.description {
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mainContainer {
+  margin: 20px;
+  display: flex;
+}
+section{
+  cursor: pointer;
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff8e0;
+  height: 112px;
+  width: 250px;
+  border-radius: 100px;
+}
+.two {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaf5df;
+  height: 112px;
+  width: 220px;
+  border-radius: 100px;
+}
+.three {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7f1ff;
+  height: 112px;
+  width: 220px;
+  border-radius: 100px;
+}
+.four {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffeff1;
+  height: 112px;
+  width: 230px;
+  border-radius: 100px;
+}
+button {
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  text-align: left;
+  padding: 10px;
+}
+
+h1 {
+  color: rgb(218, 41, 28);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.8px;
+}
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 14px;
+  }
+  .description{
+    padding: 33px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 24px;
+  }
+  .one {
+    width: 400px;
+  }
+  .two {
+    width: 400px;
+  }
+  .three {
+    width: 400px;
+  }
+  .four {
+    width: 400px;
+  }
+}
